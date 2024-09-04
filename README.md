@@ -70,3 +70,8 @@ You can use the `config.json.sample` file as an example structure for the config
 
 Use this command to install all necessary dependencies:
 > `pip install requirements.txt`
+
+
+## License
+
+This project is licensed under the [Creative Commons BY-NC 4.0](LICENSE) License.
