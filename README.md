@@ -66,12 +66,8 @@ You can use the `config.json.sample` file as an example structure for the config
 
 ## Requirements:
 
-* Python3.10 + ;
+* Python 3.10+ (3.12 recommended)
 * Other requirements located in `requirements.txt`
 
 Use this command to install all necessary dependencies:
 > `pip install requirements.txt`
-
-
-## Examples of usage:
-
