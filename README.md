@@ -74,4 +74,4 @@ Use this command to install all necessary dependencies:
 
 ## License
 
-This project is licensed under the [Creative Commons BY-NC 4.0](LICENSE) License.
+This project is licensed under the [Creative Commons BY-NC 4.0](LICENSE.md) License.
