@@ -60,7 +60,6 @@ You can use the `config.json.sample` file as an example structure for the config
 ### 5. Extra
 - **Asynchronous Handling**: All operations are performed asynchronously to ensure smooth bot performance.
 - **Steam Integration**: Commands can fetch and display a user's Steam profile link, name, and avatar.
-- **Configurable Allowed Roles**: The bot's commands can be restricted to users with specific roles defined in the `config.json` file.
 - **Server-Specific Configuration**: Each server's role, whitelist, and reserved slot settings are managed independently through a configuration file.
 
 
