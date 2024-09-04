@@ -1,0 +1,20 @@
+{
+    "token": "discord_bot_token",
+    "address": "sftp_address",
+    "port": "sftp_port",
+    "password": "sftp_password",
+    "path": ".config/SCP Secret Laboratory/config/",
+    "ra_file": "config_remoteadmin.txt",
+    "reserved_slots_file": "UserIDReservedSlots.txt",
+    "whitelist_file": "UserIDWhitelist.txt",
+    "perms_channel_id": 123,
+    "prohibited_roles_names": ["full", "vip"],
+    "servers": {
+        "Some server name": {
+            "username": "pterodactyl sftp username (differs based on raw sftp or pterodactyl separate server)",
+            "port": "7777"
+        }
+    },
+    "allowed_roles": [123],
+    "steam_api_key" : ""
+}
