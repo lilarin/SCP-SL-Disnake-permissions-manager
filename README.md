@@ -1,8 +1,7 @@
 # SCP:SL & Disnake permissions manager bot
 
-The goal of this project is to develop a convenient and easy to use bot for rights management on SCP:SL game servers.
-Bot uses the Disnake library to provide a robust and flexible solution for managing server access and permissions directly from Discord. It simplifies server management tasks by offering an intuitive interface and a huge number of features
-
+The goal of this project is to develop a convenient and easy-to-use bot for rights management on SCP
+game servers. The bot uses the Disnake library to provide a robust and flexible solution for managing server access and permissions directly from Discord. It simplifies server management tasks by offering an intuitive interface and a wide range of features.
 
 ## Set up the configuration file
 
@@ -14,7 +13,7 @@ You can use the `config.json.sample` file as an example structure for the config
 
 - **port**: The port number used to connect to the SFTP server. This is typically `22` for standard SFTP connections but may vary depending on your server's setup
 
-- **password**: The password for the SFTP user account. This allows the bot to authenticate and access the files on the SFTP server
+- **password**: The password for the SFTP user account. This allows the bot to authenticate and access the remote files
 
 - **path**: The remote path to the directory containing your SCP Secret Laboratory configuration files. The bot will manage files in this directory
 
@@ -40,22 +39,22 @@ You can use the `config.json.sample` file as an example structure for the config
 ## Key Features
 
 ### 1. Slash Commands for Role Management
-- **Grant Role (`/видати-роль`)**: Assign a specified role to a user on the server, ensuring the user doesn't already have the role. If the user has a different role, the old role is replaced.
-- **Remove Role (`/забрати-роль`)**: Remove a specified role from a user on the server.
-- **Server Roles (`/ролі-серверу`)**: Show the roles available on the server and users associated with each role.
+- **Grant Role (`/видати-роль`)**: Assign a specified role to a user on the server, ensuring the user doesn't already have the role and that role exists on the server. If the user has a different role, the old role is replaced.
+- **Remove Role (`/забрати-роль`)**: Remove role from a user on the server.
+- **Server Roles (`/ролі-серверу`)**: Show the roles available on the server.
 
 ### 2. Whitelisting and Reserved Slots Management
-- **Whitelist Management**: The bot manages user access to the server's whitelist, ensuring that only authorized users are added. Commands can check and modify a user's whitelist status.
-- **Reserved Slots Management**: The bot manages user access to dedicated server slots. It can add or remove users from the reserved slots list, ensuring that important users always have access to the server during high traffic periods.
+- **Whitelist Management**: Manage user access to the whitelist.
+- **Reserved Slots Management**: Manage user access to the reserved slots, ensuring that important users always have access to the server during high traffic periods.
 
 ### 3. Displaying comprehensive information about users
 - **Show User (`/показати-користувача`)**: Retrieve detailed information about a user across all configured servers, including their roles, whitelisting status, and access to reserved slots.
-- **Show Users (`/показати-користувачів`)**: Display a list of users with specific roles, whitelist access, or reserved slots on a server.
+- **Show Users (`/показати-користувачів`)**: Display a list of users by admin access, whitelist access, or reserved slots on a server.
 
 ### 4. Decorators for Command Validation
 - **`check_channel()`**: Ensures that commands are used only in authorized channels. If a command is used in the wrong channel, a message is sent with the correct channel link.
-- **`check_steamid()`**: Validates the SteamID provided in the command arguments. If invalid, an error message is sent to the user. The SteamID is also cleaned of unnecessary characters.
-- **`check_role()`**: Ensures that the role specified in the command is not in the list of prohibited roles. If it is, the command execution is halted, and an error message is sent.
+- **`check_steamid()`**: Validates the SteamID.
+- **`check_role()`**: Ensures that the role specified in the command is not in the list of prohibited roles. If it is, the command execution is halted adding ability to make some roles accessible only via manual change.
 
 ### 5. Extra
 - **Asynchronous Handling**: All operations are performed asynchronously to ensure smooth bot performance.
