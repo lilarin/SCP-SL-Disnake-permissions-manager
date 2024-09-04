@@ -20,9 +20,9 @@ You can use the `config.json.sample` file as an example structure for the config
 
 - **ra_file**: The filename of the RemoteAdmin configuration file. This file contains administrator settings for your SCP Secret Laboratory server such as roles, permissions and users
 
-- **reserved_slots_file**: The filename of the reserved slots file. This file contains a list of user steamid@steam IDs
+- **reserved_slots_file**: The filename of the reserved slots file. This file contains a list of user `steamid@steam` IDs
 
-- **whitelist_file**: The filename of the whitelist file. This file contains a list of user steamid@steam IDs
+- **whitelist_file**: The filename of the whitelist file. This file contains a list of user `steamid@steam` IDs
 
 - **perms_channel_id**: The Discord channel ID where the bot will only work. This should be a numeric ID representing a specific channel in your Discord server
 
