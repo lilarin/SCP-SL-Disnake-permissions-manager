@@ -73,7 +73,7 @@ You can use the `config.json.sample` file as an example structure for the config
 * Other requirements located in `requirements.txt`
 
 Use this command to install all necessary dependencies:
-> pip install requirements.txt
+> `pip install requirements.txt`
 
 
 ## Examples of usage:
