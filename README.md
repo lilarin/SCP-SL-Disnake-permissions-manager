@@ -39,7 +39,7 @@ You can use the `config.json.sample` file as an example structure for the config
 ## Key Features
 
 ### 1. Slash Commands for Role Management
-- **Grant Role (`/видати-роль`)**: Assign a specified role to a user on the server, ensuring the user doesn't already have the role. If the user has a different role, the old role is replaced.
+- **Grant Role (`/видати-роль`)**: Assign a specified role to a user on the server, ensuring the user doesn't already have the role and that role exists on the server. If the user has a different role, the old role is replaced.
 - **Remove Role (`/забрати-роль`)**: Remove role from a user on the server.
 - **Server Roles (`/ролі-серверу`)**: Show the roles available on the server.
 
