@@ -57,12 +57,9 @@ You can use the `config.json.sample` file as an example structure for the config
 - **`check_steamid()`**: Validates the SteamID provided in the command arguments. If invalid, an error message is sent to the user. The SteamID is also cleaned of unnecessary characters.
 - **`check_role()`**: Ensures that the role specified in the command is not in the list of prohibited roles. If it is, the command execution is halted, and an error message is sent.
 
-### 5. Steam Integration
-- **Steam Profile Linking**: Commands can fetch and display a user's Steam profile link, name, and avatar.
-- **Steam Role Management**: Fetches and manages roles from external files associated with Steam IDs, ensuring that roles are correctly assigned or removed based on the user's current roles on the server.
-
-### 6. Extra
+### 5. Extra
 - **Asynchronous Handling**: All operations are performed asynchronously to ensure smooth bot performance.
+- **Steam Integration**: Commands can fetch and display a user's Steam profile link, name, and avatar.
 - **Configurable Allowed Roles**: The bot's commands can be restricted to users with specific roles defined in the `config.json` file.
 - **Server-Specific Configuration**: Each server's role, whitelist, and reserved slot settings are managed independently through a configuration file.
 
