@@ -14,7 +14,7 @@ from utils.file_manager import FileManager as File
 with open("config.json", "r") as config_file:
     config = json.load(config_file)
 
-bot = commands.InteractionBot(intents=disnake.Intents.all())
+bot = commands.InteractionBot(intents=None)
 
 
 @bot.event
