@@ -20,9 +20,9 @@ You can use the `config.json.sample` file as an example structure for the config
 
 - **ra_file**: The filename of the RemoteAdmin configuration file. This file contains administrator settings for your SCP Secret Laboratory server such as roles, permissions and users
 
-- **reserved_slots_file**: The filename of the reserved slots file. This file contains a list of user steamid@steam IDs
+- **reserved_slots_file**: The filename of the reserved slots file. This file contains a list of user `steamid@steam` IDs
 
-- **whitelist_file**: The filename of the whitelist file. This file contains a list of user steamid@steam IDs
+- **whitelist_file**: The filename of the whitelist file. This file contains a list of user `steamid@steam` IDs
 
 - **perms_channel_id**: The Discord channel ID where the bot will only work. This should be a numeric ID representing a specific channel in your Discord server
 
@@ -57,24 +57,17 @@ You can use the `config.json.sample` file as an example structure for the config
 - **`check_steamid()`**: Validates the SteamID provided in the command arguments. If invalid, an error message is sent to the user. The SteamID is also cleaned of unnecessary characters.
 - **`check_role()`**: Ensures that the role specified in the command is not in the list of prohibited roles. If it is, the command execution is halted, and an error message is sent.
 
-### 5. Steam Integration
-- **Steam Profile Linking**: Commands can fetch and display a user's Steam profile link, name, and avatar.
-- **Steam Role Management**: Fetches and manages roles from external files associated with Steam IDs, ensuring that roles are correctly assigned or removed based on the user's current roles on the server.
-
-### 6. Extra
+### 5. Extra
 - **Asynchronous Handling**: All operations are performed asynchronously to ensure smooth bot performance.
+- **Steam Integration**: Commands can fetch and display a user's Steam profile link, name, and avatar.
 - **Configurable Allowed Roles**: The bot's commands can be restricted to users with specific roles defined in the `config.json` file.
 - **Server-Specific Configuration**: Each server's role, whitelist, and reserved slot settings are managed independently through a configuration file.
 
 
 ## Requirements:
 
-* Python3.10 + ;
+* Python 3.10+ (3.12 recommended)
 * Other requirements located in `requirements.txt`
 
 Use this command to install all necessary dependencies:
 > `pip install requirements.txt`
-
-
-## Examples of usage:
-
