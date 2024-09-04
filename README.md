@@ -3,7 +3,6 @@
 The goal of this project is to develop a convenient and easy to use bot for rights management on SCP:SL game servers.
 Bot uses the Disnake library to provide a robust and flexible solution for managing server access and permissions directly from Discord. It simplifies server management tasks by offering an intuitive interface and a huge number of features
 
-------
 
 ## Set up the configuration file
 
@@ -37,7 +36,6 @@ You can use the `config.json.sample` file as an example structure for the config
 
 - **steam_api_key**: An API key for accessing Steam services
 
-------
 
 ## Key Features
 
@@ -68,7 +66,6 @@ You can use the `config.json.sample` file as an example structure for the config
 - **Configurable Allowed Roles**: The bot's commands can be restricted to users with specific roles defined in the `config.json` file.
 - **Server-Specific Configuration**: Each server's role, whitelist, and reserved slot settings are managed independently through a configuration file.
 
-------
 
 ## Requirements:
 
@@ -77,3 +74,7 @@ You can use the `config.json.sample` file as an example structure for the config
 
 Use this command to install all necessary dependencies:
 > pip install requirements.txt
+
+
+## Examples of usage:
+
