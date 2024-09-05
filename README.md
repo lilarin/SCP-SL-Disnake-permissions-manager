@@ -59,6 +59,16 @@ You can use the `config.json.sample` file as an example structure for the config
 - **Steam Integration**: Commands can fetch and display a user's Steam profile link, name, and avatar.
 - **Server-Specific Configuration**: Each server's role, whitelist, and reserved slot settings are managed independently through a configuration file.
 
+## Examples of usage
+
+![image](https://imgur.com/cyV1L1e.png)
+![image](https://imgur.com/xf76zZV.png)
+![image](https://imgur.com/WlP1pJ6.png)
+![image](https://imgur.com/DJnnX8r.png)
+![image](https://imgur.com/D9CtDfu.png)
+![image](https://imgur.com/YYvZ3uj.png)
+
+
 ## Requirements
 
 * Python 3.10+ (3.12 recommended)
