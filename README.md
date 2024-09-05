@@ -34,30 +34,46 @@ You can use the `config.json.sample` file as an example structure for the config
 
 - **steam_api_key**: An API key for accessing Steam services.
 
-## Key Features
+## Features
 
-### 1. Slash Commands for Role Management
-- **Grant Role (`/видати-роль`)**: Assign a specified role to a user on the server, ensuring the user doesn't already have the role and that the role exists on the server. If the user has a different role, the old role is replaced.
-- **Remove Role (`/забрати-роль`)**: Remove a role from a user on the server.
-- **Server Roles (`/ролі-серверу`)**: Show the roles available on the server.
+<details>
+  <summary><b>Slash Commands for Role Management</b></summary>
+  
+  - **Grant Role (`/видати-роль`)**: Assign a specified role to a user on the server, ensuring the user doesn't already have the role and that the role exists on the server. If the user has a different role, the old role is replaced.
+  - **Remove Role (`/забрати-роль`)**: Remove a role from a user on the server.
+  - **Server Roles (`/ролі-серверу`)**: Show the roles available on the server.
 
-### 2. Whitelisting and Reserved Slots Management
-- **Whitelist Management**: Manage user access to the whitelist.
-- **Reserved Slots Management**: Manage user access to the reserved slots, ensuring that important users always have access to the server during high-traffic periods.
+</details>
+<details>
+  <summary><b>Whitelisting and Reserved Slots Management</b></summary>
 
-### 3. Displaying Comprehensive Information About Users
-- **Show User (`/показати-користувача`)**: Retrieve detailed information about a user across all configured servers, including their roles, whitelisting status, and access to reserved slots.
-- **Show Users (`/показати-користувачів`)**: Display a list of users by admin access, whitelist access, or reserved slots on a server.
+  - **Whitelist Management**: Manage user access to the whitelist.
+  - **Reserved Slots Management**: Manage user access to the reserved slots, ensuring that important users always have access to the server during high-traffic periods.
 
-### 4. Decorators for Command Validation
-- **`check_channel()`**: Ensures that commands are used only in authorized channels. If a command is used in the wrong channel, a message is sent with the correct channel link.
-- **`check_steamid()`**: Validates the SteamID.
-- **`check_role()`**: Ensures that the role specified in the command is not in the list of prohibited roles. If it is, the command execution is halted, adding the ability to make some roles accessible only via manual change.
+</details>
+<details>
+  <summary><b>Displaying Comprehensive Information About Users</b></summary>
 
-### 5. Extra
-- **Asynchronous Handling**: All operations are performed asynchronously to ensure smooth bot performance.
-- **Steam Integration**: Commands can fetch and display a user's Steam profile link, name, and avatar.
-- **Server-Specific Configuration**: Each server's role, whitelist, and reserved slot settings are managed independently through a configuration file.
+  - **Show User (`/показати-користувача`)**: Retrieve detailed information about a user across all configured servers, including their roles, whitelisting status, and access to reserved slots.
+  - **Show Users (`/показати-користувачів`)**: Display a list of users by admin access, whitelist access, or reserved slots on a server.
+
+</details>
+<details>
+  <summary><b>Command Validation Using Decorators and Error Handling</b></summary>
+
+  - **`check_channel()`**: Ensures that commands are used only in authorized channels. If a command is used in the wrong channel, a message is sent with the correct channel link.
+  - **`check_steamid()`**: Validates the SteamID.
+  - **`check_role()`**: Ensures that the role specified in the command is not in the list of prohibited roles. If it is, the command execution is halted, adding the ability to make some roles accessible only via manual change.
+
+</details>
+<details>
+  <summary><b>Extra</b></summary>
+
+  - **Asynchronous Handling**: All operations are performed asynchronously to ensure smooth bot performance.
+  - **Steam Integration**: Commands can fetch and display a user's Steam profile link, name, and avatar.
+  - **Server-Specific Configuration**: Each server's role, whitelist, and reserved slot settings are managed independently through a configuration file.
+
+</details>
 
 ## Examples of usage
 
@@ -67,7 +83,6 @@ You can use the `config.json.sample` file as an example structure for the config
 ![image](https://imgur.com/DJnnX8r.png)
 ![image](https://imgur.com/D9CtDfu.png)
 ![image](https://imgur.com/YYvZ3uj.png)
-
 
 ## Requirements
 
